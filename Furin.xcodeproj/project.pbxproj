@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F8A353B29125D81004F156F /* FurinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A353A29125D81004F156F /* FurinApp.swift */; };
+		8F8A353D29125D81004F156F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A353C29125D81004F156F /* ContentView.swift */; };
+		8F8A353F29125D84004F156F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8A353E29125D84004F156F /* Assets.xcassets */; };
+		8F8A354229125D84004F156F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8A354129125D84004F156F /* Preview Assets.xcassets */; };
+		8F8A354C29125D84004F156F /* FurinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A354B29125D84004F156F /* FurinTests.swift */; };
+		8F8A355629125D84004F156F /* FurinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A355529125D84004F156F /* FurinUITests.swift */; };
+		8F8A355829125D84004F156F /* FurinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A355729125D84004F156F /* FurinUITestsLaunchTests.swift */; };
+		8F8A356529125E52004F156F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A356429125E52004F156F /* Camera.swift */; };
+		8F8A356729125E7F004F156F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A356629125E7F004F156F /* Model.swift */; };
+		8F8A35692912D374004F156F /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A35682912D374004F156F /* Tracking.swift */; };
+		8F8A356B2912DAAD004F156F /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A356A2912DAAD004F156F /* NotificationHandler.swift */; };
+		8F8A356D2912DAC8004F156F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8A356C2912DAC8004F156F /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F8A354829125D84004F156F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F8A352F29125D81004F156F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F8A353629125D81004F156F;
+			remoteInfo = Furin;
+		};
+		8F8A355229125D84004F156F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F8A352F29125D81004F156F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F8A353629125D81004F156F;
+			remoteInfo = Furin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8F8A353729125D81004F156F /* Furin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8A353A29125D81004F156F /* FurinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurinApp.swift; sourceTree = "<group>"; };
+		8F8A353C29125D81004F156F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F8A353E29125D84004F156F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F8A354129125D84004F156F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8F8A354729125D84004F156F /* FurinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8A354B29125D84004F156F /* FurinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurinTests.swift; sourceTree = "<group>"; };
+		8F8A355129125D84004F156F /* FurinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F8A355529125D84004F156F /* FurinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurinUITests.swift; sourceTree = "<group>"; };
+		8F8A355729125D84004F156F /* FurinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F8A356429125E52004F156F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		8F8A356629125E7F004F156F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8F8A35682912D374004F156F /* Tracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
+		8F8A356A2912DAAD004F156F /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		8F8A356C2912DAC8004F156F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8F8A356E29134464004F156F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F8A353429125D81004F156F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8A354429125D84004F156F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8A354E29125D84004F156F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F8A352E29125D81004F156F = {
+			isa = PBXGroup;
+			children = (
+				8F8A353929125D81004F156F /* Furin */,
+				8F8A354A29125D84004F156F /* FurinTests */,
+				8F8A355429125D84004F156F /* FurinUITests */,
+				8F8A353829125D81004F156F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F8A353829125D81004F156F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F8A353729125D81004F156F /* Furin.app */,
+				8F8A354729125D84004F156F /* FurinTests.xctest */,
+				8F8A355129125D84004F156F /* FurinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F8A353929125D81004F156F /* Furin */ = {
+			isa = PBXGroup;
+			children = (
+				8F8A356E29134464004F156F /* Info.plist */,
+				8F8A356429125E52004F156F /* Camera.swift */,
+				8F8A356A2912DAAD004F156F /* NotificationHandler.swift */,
+				8F8A356C2912DAC8004F156F /* Launch Screen.storyboard */,
+				8F8A35682912D374004F156F /* Tracking.swift */,
+				8F8A356629125E7F004F156F /* Model.swift */,
+				8F8A353A29125D81004F156F /* FurinApp.swift */,
+				8F8A353C29125D81004F156F /* ContentView.swift */,
+				8F8A353E29125D84004F156F /* Assets.xcassets */,
+				8F8A354029125D84004F156F /* Preview Content */,
+			);
+			path = Furin;
+			sourceTree = "<group>";
+		};
+		8F8A354029125D84004F156F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8F8A354129125D84004F156F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8F8A354A29125D84004F156F /* FurinTests */ = {
+			isa = PBXGroup;
+			children = (
+				8F8A354B29125D84004F156F /* FurinTests.swift */,
+			);
+			path = FurinTests;
+			sourceTree = "<group>";
+		};
+		8F8A355429125D84004F156F /* FurinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8F8A355529125D84004F156F /* FurinUITests.swift */,
+				8F8A355729125D84004F156F /* FurinUITestsLaunchTests.swift */,
+			);
+			path = FurinUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F8A353629125D81004F156F /* Furin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F8A355B29125D84004F156F /* Build configuration list for PBXNativeTarget "Furin" */;
+			buildPhases = (
+				8F8A353329125D81004F156F /* Sources */,
+				8F8A353429125D81004F156F /* Frameworks */,
+				8F8A353529125D81004F156F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Furin;
+			productName = Furin;
+			productReference = 8F8A353729125D81004F156F /* Furin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8F8A354629125D84004F156F /* FurinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F8A355E29125D84004F156F /* Build configuration list for PBXNativeTarget "FurinTests" */;
+			buildPhases = (
+				8F8A354329125D84004F156F /* Sources */,
+				8F8A354429125D84004F156F /* Frameworks */,
+				8F8A354529125D84004F156F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F8A354929125D84004F156F /* PBXTargetDependency */,
+			);
+			name = FurinTests;
+			productName = FurinTests;
+			productReference = 8F8A354729125D84004F156F /* FurinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8F8A355029125D84004F156F /* FurinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F8A356129125D84004F156F /* Build configuration list for PBXNativeTarget "FurinUITests" */;
+			buildPhases = (
+				8F8A354D29125D84004F156F /* Sources */,
+				8F8A354E29125D84004F156F /* Frameworks */,
+				8F8A354F29125D84004F156F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F8A355329125D84004F156F /* PBXTargetDependency */,
+			);
+			name = FurinUITests;
+			productName = FurinUITests;
+			productReference = 8F8A355129125D84004F156F /* FurinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F8A352F29125D81004F156F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					8F8A353629125D81004F156F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					8F8A354629125D84004F156F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 8F8A353629125D81004F156F;
+					};
+					8F8A355029125D84004F156F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 8F8A353629125D81004F156F;
+					};
+				};
+			};
+			buildConfigurationList = 8F8A353229125D81004F156F /* Build configuration list for PBXProject "Furin" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F8A352E29125D81004F156F;
+			productRefGroup = 8F8A353829125D81004F156F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F8A353629125D81004F156F /* Furin */,
+				8F8A354629125D84004F156F /* FurinTests */,
+				8F8A355029125D84004F156F /* FurinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F8A353529125D81004F156F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8A356D2912DAC8004F156F /* Launch Screen.storyboard in Resources */,
+				8F8A354229125D84004F156F /* Preview Assets.xcassets in Resources */,
+				8F8A353F29125D84004F156F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8A354529125D84004F156F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8A354F29125D84004F156F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F8A353329125D81004F156F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8A35692912D374004F156F /* Tracking.swift in Sources */,
+				8F8A356B2912DAAD004F156F /* NotificationHandler.swift in Sources */,
+				8F8A353D29125D81004F156F /* ContentView.swift in Sources */,
+				8F8A353B29125D81004F156F /* FurinApp.swift in Sources */,
+				8F8A356529125E52004F156F /* Camera.swift in Sources */,
+				8F8A356729125E7F004F156F /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8A354329125D84004F156F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8A354C29125D84004F156F /* FurinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F8A354D29125D84004F156F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F8A355629125D84004F156F /* FurinUITests.swift in Sources */,
+				8F8A355829125D84004F156F /* FurinUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F8A354929125D84004F156F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F8A353629125D81004F156F /* Furin */;
+			targetProxy = 8F8A354829125D84004F156F /* PBXContainerItemProxy */;
+		};
+		8F8A355329125D84004F156F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F8A353629125D81004F156F /* Furin */;
+			targetProxy = 8F8A355229125D84004F156F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8F8A355929125D84004F156F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F8A355A29125D84004F156F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F8A355C29125D84004F156F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Furin/Preview Content\"";
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Furin/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Ask to use the camera";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amber.Furin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F8A355D29125D84004F156F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Furin/Preview Content\"";
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Furin/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Ask to use the camera";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amber.Furin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8F8A355F29125D84004F156F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amber.FurinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Furin";
+			};
+			name = Debug;
+		};
+		8F8A356029125D84004F156F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amber.FurinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Furin.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Furin";
+			};
+			name = Release;
+		};
+		8F8A356229125D84004F156F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amber.FurinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Furin;
+			};
+			name = Debug;
+		};
+		8F8A356329125D84004F156F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89P42BULRY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Amber.FurinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Furin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F8A353229125D81004F156F /* Build configuration list for PBXProject "Furin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8A355929125D84004F156F /* Debug */,
+				8F8A355A29125D84004F156F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F8A355B29125D84004F156F /* Build configuration list for PBXNativeTarget "Furin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8A355C29125D84004F156F /* Debug */,
+				8F8A355D29125D84004F156F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F8A355E29125D84004F156F /* Build configuration list for PBXNativeTarget "FurinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8A355F29125D84004F156F /* Debug */,
+				8F8A356029125D84004F156F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F8A356129125D84004F156F /* Build configuration list for PBXNativeTarget "FurinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F8A356229125D84004F156F /* Debug */,
+				8F8A356329125D84004F156F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F8A352F29125D81004F156F /* Project object */;
+}
