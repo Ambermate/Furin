@@ -20,18 +20,21 @@ class NotificationHandler {
         }
     }
     
-    func sendNotification(timeInterval: Double = 5.0, title: String, body: String) {
-        var trigger: UNNotificationTrigger?
-        
-        trigger = UNTimeIntervalNotificationTrigger(timeInterval: timeInterval, repeats: false)
+    func sendNotification(timeInterval: Double, title: String, body: String) {
+        //var trigger: UNNotificationTrigger?
         
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
         content.sound = UNNotificationSound.default
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
         
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
         
-        UNUserNotificationCenter.current().add(request)
+        UNUserNotificationCenter.current().add(request) { (error) in
+            //
+        }
     }
 }

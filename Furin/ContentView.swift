@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("sendNoti") var notification = false
     var body: some View {
         Camera()
     }

@@ -23,14 +23,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.requestAlwaysAuthorization()
         }
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.allowsBackgroundLocationUpdates = true
         locationManager.startUpdatingLocation()
     }
     
     internal func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         guard let speed = locationManager.location?.speed else {return}
-        print("check speed")
-        print(speed * 3600 / 1609.3)
+        Noti.speed = speed * 3600 / 1609.3
+
+        print("check speed: \(Noti.speed)")
     }
     
     private func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -39,4 +41,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+}
+
+struct Noti {
+    static var speed: Double = 0.1
+    static var notification: Bool = false
 }

@@ -9,7 +9,6 @@ import SwiftUI
 import UIKit
 import CoreLocation
 
-
 struct Camera: View {
     @State private var iShown: Bool = false
     @State private var image: Image = Image("")
@@ -17,7 +16,7 @@ struct Camera: View {
     
 //    @State var speed : CLLocationSpeed = 0.2
     var body: some View {
-        
+        let notify = NotificationHandler()
         VStack {
             image.resizable()
                 .aspectRatio(contentMode: .fit)
@@ -30,12 +29,28 @@ struct Camera: View {
             }
             .buttonStyle(.borderedProminent)
             
-            Text("hello world \(ViewModel().yourSpeed * 1000)")
+            Text("hello world \(Noti.speed)")
             
             Tracker()
+            
+            Button(action: {
+                notify.sendNotification(timeInterval: 5, title: "Tester", body: "Testing feature")
+                print("did press")
+                
+            }) {
+                Text("hello")
+            }
         }
-        .onChange(of: <#T##Equatable#>) { newValue in
-            <#code#>
+        .onAppear {
+            notify.askPermission()
+        }
+        .onChange(of: Noti.speed) { newValue in
+            if Noti.speed > 40 {
+                notify.sendNotification(timeInterval: 3, title: "Testing", body: "hello this is the testing template for whatever reason you are having right now!")
+            }
+            else {
+                print("not fast enough")
+            }
         }
         .fullScreenCover(isPresented: $iShown) {
             //
@@ -68,7 +83,6 @@ struct Access: UIViewControllerRepresentable {
     }
 }
 
-
 struct Tracker: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
         
@@ -77,8 +91,6 @@ struct Tracker: UIViewControllerRepresentable {
         return ViewController()
     }
 }
-
-
 
 struct Camera_Previews: PreviewProvider {
     static var previews: some View {
