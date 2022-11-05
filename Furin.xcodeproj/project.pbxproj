@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F38010E2915783D0083625E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F38010D2915783D0083625E /* CameraView.swift */; };
+		8F38011029157A930083625E /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F38010F29157A930083625E /* CameraModel.swift */; };
 		8F8A353B29125D81004F156F /* FurinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A353A29125D81004F156F /* FurinApp.swift */; };
 		8F8A353D29125D81004F156F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8A353C29125D81004F156F /* ContentView.swift */; };
 		8F8A353F29125D84004F156F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8A353E29125D84004F156F /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F38010D2915783D0083625E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8F38010F29157A930083625E /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 		8F8A353729125D81004F156F /* Furin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Furin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8A353A29125D81004F156F /* FurinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurinApp.swift; sourceTree = "<group>"; };
 		8F8A353C29125D81004F156F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			children = (
 				8F8A356E29134464004F156F /* Info.plist */,
 				8F8A356429125E52004F156F /* Camera.swift */,
+				8F38010D2915783D0083625E /* CameraView.swift */,
+				8F38010F29157A930083625E /* CameraModel.swift */,
 				8F8A356A2912DAAD004F156F /* NotificationHandler.swift */,
 				8F8A356C2912DAC8004F156F /* Launch Screen.storyboard */,
 				8F8A35682912D374004F156F /* Tracking.swift */,
@@ -276,10 +282,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F8A35692912D374004F156F /* Tracking.swift in Sources */,
+				8F38010E2915783D0083625E /* CameraView.swift in Sources */,
 				8F8A356B2912DAAD004F156F /* NotificationHandler.swift in Sources */,
 				8F8A353D29125D81004F156F /* ContentView.swift in Sources */,
 				8F8A353B29125D81004F156F /* FurinApp.swift in Sources */,
 				8F8A356529125E52004F156F /* Camera.swift in Sources */,
+				8F38011029157A930083625E /* CameraModel.swift in Sources */,
 				8F8A356729125E7F004F156F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +456,7 @@
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Ask to use location";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Ask to use location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Ask to use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -483,6 +492,7 @@
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Ask to use location";
 				INFOPLIST_KEY_NSLocationUsageDescription = "Ask to use location";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Ask to use location";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Ask to use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
