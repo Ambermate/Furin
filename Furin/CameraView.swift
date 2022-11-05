@@ -8,40 +8,40 @@
 import SwiftUI
 
 struct CameraView: View {
-    @StateObject var camera = CameraModel()
+    @StateObject var cameraModel = CameraModel()
     
     var body: some View {
         ZStack {
-            CameraPreview(camera: camera)
+            CameraPreview(cameraModel: cameraModel)
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack {
                 Spacer()
                 
                 //-- if taken, show post option and retake
-                if camera.isTaken {
+                if cameraModel.isTaken {
                     HStack {
-                        Button(action: {}) {
+                        Button(action: {cameraModel.reTake()}) {
                             Text("cancel")
                         }
-                        Button(action: {camera.isTaken.toggle()}) {
+                        Button(action: {cameraModel.isTaken.toggle()}) {
                             Circle()
                                 .fill(Color.white)
                                 .frame(width: 65, height: 65)
                         }
                         
                         Button(action: {
-                            if !camera.isSaved {
-                                camera.savePic()
+                            if !cameraModel.isSaved {
+                                cameraModel.savePic()
                             }
                         }) {
-                            Text(camera.isSaved ? "Saved" : "Save")
+                            Text(cameraModel.isSaved ? "Saved" : "Save")
                         }
                     }
                 }
                 else {
                     HStack {
-                        Button(action: {camera.takePicture()}) {
+                        Button(action: {cameraModel.takePicture()}) {
                             ZStack {
                                 Circle()
                                     .fill(Color.white)
@@ -58,7 +58,7 @@ struct CameraView: View {
             }
         }
         .onAppear {
-            camera.checkPermission()
+            cameraModel.checkPermission()
         }
     }
 }
